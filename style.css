@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+i {cursor: pointer;
+}
+
+nav i {
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 470px;
+    padding: 40px 0 0 40px;
+    flex-direction: column;
+    align-items: center;
+    list-style: none; 
+    background-color: #CCC;
+    height: 90vh;
+}
+
+nav li:first-of-type {
+    margin-top: 30px;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.jeu {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jeu h2 {
+    font-size: 6em;
+    color: black;
+    text-align: center;
+}
+
+input{
+    padding: 15px 20px;
+    font-size: 1.5em;
+    width: 50%;
+    border-radius: 40px;
+}
+
+#boutonDéviner {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-radius: 40px;
+}
+
+#boutonSuivant {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-radius: 40px;
+}
+
