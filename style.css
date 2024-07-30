@@ -2,6 +2,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-image: url(joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+    background-size: cover;
 }
 
 
@@ -9,8 +10,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 i {cursor: pointer;
@@ -19,7 +20,7 @@ i {cursor: pointer;
 nav i {
     position: absolute;
     z-index: 1;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 20px;
 }
 
@@ -32,7 +33,7 @@ nav ul{
     flex-direction: column;
     align-items: center;
     list-style: none; 
-    background-color: #CCC;
+    background-color: #79400a;
     height: 90vh;
 }
 
@@ -41,12 +42,19 @@ nav li:first-of-type {
 }
 
 nav li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 217, 0);
+}
+
+a:hover {
+    background-color: rgb(255, 217, 0);
+    color: #79400a;
+    border-radius: 40px;
+    padding: 5px 10px;
 }
 
 .jeu {
@@ -55,15 +63,16 @@ a {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 70%;
+    width: 73%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .jeu h2 {
     font-size: 6em;
-    color: black;
+    color:  #79400a;
     text-align: center;
+    text-shadow: 2px 2px 5px rgb(255, 217, 0);
 }
 
 input{
@@ -78,6 +87,9 @@ input{
     padding: 10px 20px;
     font-size: 1.5em;
     border-radius: 40px;
+    background-color: #79400a;
+    color: rgb(255, 217, 0);
+    cursor: pointer;
 }
 
 #boutonSuivant {
@@ -85,5 +97,35 @@ input{
     padding: 10px 20px;
     font-size: 1.5em;
     border-radius: 40px;
+    background-color: #79400a;
+    color: rgb(255, 217, 0);
+    cursor: pointer;
 }
 
+#afficherRésultat {
+    font-weight: 600;
+    font-size: 1.5em;
+
+}
+
+.animation-réponse {
+    animation: tourner180 2s;
+}
+ @keyframes tourner180{
+    0% {
+        transition: rotate 500ms;
+        rotate: 180deg;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    50%{
+        color: green;
+    }
+
+    100% {
+        transition: rotate 500ms;
+        rotate: -180deg;
+        color: red;
+    }
+ }

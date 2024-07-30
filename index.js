@@ -10,14 +10,6 @@ function menu(){
     }
 }
 
-document.addEventListener ('click', function(event){
-    let menu = document.getElementById('menu');
-    let menuIcon = document.querySelector('.fa-bars');
-
-    if (menu.style.display === 'block' && !menu.contains(event.target) && event.target !== menuIcon) {
-        menu.style.display = 'none';
-    }
-});
 
 
 //while loop = repeat some code WHILE some condition is true
@@ -44,8 +36,11 @@ function trouverRéponse() {
     let chiffreUtilisateurValue = chiffreUtilisateur.value;
     switch (true){
         case (chiffreUtilisateurValue == chiffreChoisi):  
-            afficherRésultat.innerHTML = `Vous avez deviné, c'est ${chiffreChoisi}`;
-            console.log(`Vous avez deviné, c'est ${chiffreChoisi}`);
+            afficherRésultat.innerHTML = `Bravo, vous avez deviné, c'est ${chiffreChoisi} !!`;
+            console.log(`Bravo, vous avez deviné, c'est ${chiffreChoisi} !!`);
+            afficherRésultat.classList.remove('animation-réponse');
+            let temp = afficherRésultat.offsetWidth;
+            afficherRésultat.classList.add('animation-réponse');
             break;
 
         case (chiffreUtilisateurValue < chiffreChoisi):
